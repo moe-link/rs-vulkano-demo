@@ -19,7 +19,7 @@ fn main() {
     // 创建一个窗口
     let window = WindowBuilder::new()
         .with_title("Vulkano Triangle Example")
-        .build_vk_surface(&event_loop, Instance::new(None, &Features::none(), &InstanceExtensions::none()).unwrap())
+        .build_vk_surface(&event_loop, Instance::new(None, &Features::none(), &InstanceExtensions::none(), ()).unwrap())
         .unwrap();
 
     // 选择物理设备
